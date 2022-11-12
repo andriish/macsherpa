@@ -20,10 +20,10 @@ brew install pkg-config
    export CC=gcc-12
    export FC=gfortran-12
 
-git clone https://gitlab.cern.ch/averbyts/sherpa
+git clone --depth 1 https://gitlab.cern.ch/averbyts/sherpa -b cmake
 cd sherpa
-git checkout cmake
 
+autoreconf -fi
 ./configure --with-hepmc2=/usr/local/Cellar/hepmc2/2.06.11 --with-lhapdf=/usr/local/Cellar/lhapdf/6.5.3
 
 make -j 2

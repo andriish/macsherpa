@@ -20,9 +20,8 @@ brew install pkg-config
    export CC=gcc-12
    export FC=gfortran-12
 
-git clone https://gitlab.cern.ch/averbyts/sherpa
+git clone --depth 1 https://gitlab.cern.ch/averbyts/sherpa -b cmake
 cd sherpa
-git checkout cmake
 
 
 cmake -S . -B BUILD -DCMAKE_INSTALL_PREFIX=$(pwd)/CM \
