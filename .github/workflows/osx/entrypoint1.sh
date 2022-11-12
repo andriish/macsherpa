@@ -26,7 +26,7 @@ git checkout cmake
 
 ./configure --with-hepmc2=/usr/local/Cellar/hepmc2/2.06.11 --with-lhapdf=/usr/local/Cellar/lhapdf/6.5.3
 
-mske -j 2
-mske install
+make -j 2
+make install
 
 
