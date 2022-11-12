@@ -34,6 +34,7 @@ cmake -S . -B BUILD -DCMAKE_INSTALL_PREFIX=$(pwd)/CM \
           -DHepMC2_DIR=/usr/local/Cellar/hepmc2/2.06.11 \
            -DSHERPA_ENABLE_RECOLA=OFF \
            -DSHERPA_ENABLE_HZTOOL=OFF \
+           -DSHERPA_ENABLE_ROOT=OFF \
            -DSHERPA_ENABLE_BLACKHAT=OFF \
            -DSHERPA_ENABLE_RIVET=OFF \
            -DSHERPA_ENABLE_GOSAM=OFF \
