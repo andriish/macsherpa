@@ -5,7 +5,7 @@ export TOP=$(pwd)
 mkdir LOCAL
 cd LOCAL
 brew tap davidchall/hep
-brew install hepmc lhapdf  hepmc3
+brew install hepmc lhapdf  hepmc3 libzip
 brew install wget coreutils  
 brew install gnu-sed
 brew install gcc
