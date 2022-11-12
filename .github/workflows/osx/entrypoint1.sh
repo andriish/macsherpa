@@ -16,8 +16,8 @@ brew install libtool
 brew install pkg-config
 
 
-   export CXX=g++-12
-   export CC=gcc-12
+  # export CXX=g++-12
+  # export CC=gcc-12
    export FC=gfortran-12
 
 git clone --depth 1 https://gitlab.cern.ch/averbyts/sherpa -b cmake
