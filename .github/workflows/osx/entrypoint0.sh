@@ -16,16 +16,16 @@ brew install libtool
 brew install pkg-config
 
 
-   export CXX=g++-12
-   export CC=gcc-12
+ #  export CXX=g++-12
+ #  export CC=gcc-12
    export FC=gfortran-12
 
 git clone --depth 1 https://gitlab.cern.ch/averbyts/sherpa -b cmake
 cd sherpa
-
+#-fcx-fortran-rules
 
 cmake -S . -B BUILD -DCMAKE_INSTALL_PREFIX=$(pwd)/CM \
-          -DCMAKE_CXX_FLAGS="-O2 -g -fcx-fortran-rules" -DCMAKE_C_FLAGS="-O2 -g" -DCMAKE_Fortran_FLAGS="-O2 -g" \
+          -DCMAKE_CXX_FLAGS="-O2 -g " -DCMAKE_C_FLAGS="-O2 -g" -DCMAKE_Fortran_FLAGS="-O2 -g" \
           -DLHAPDF_DIR=/usr/local/Cellar/lhapdf/6.5.3  \
           -DSHERPA_ENABLE_MCFM=OFF  \
           -DSHERPA_ENABLE_HEPMC3_ROOT=OFF  \
